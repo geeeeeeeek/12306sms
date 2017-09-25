@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xqs.sms.MainActivity">
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="发件人号码"
+        android:text="12306"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_below="@+id/et_address"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="短信内容"
+        android:text="【铁路客服】订单EA86035136，肖庆松您已购10月1日G150次13车10C号济南西站22:02开"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_below="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="生成短信"/>
+
+</RelativeLayout>
